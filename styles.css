@@ -84,3 +84,57 @@ a:visited {
     margin-top: 10px;
     border-radius: 10px;
 }
+
+
+
+
+.left-column {
+    width: 20%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 50px; /* Ajusta el valor según el espacio que desees dejar arriba */
+    bottom: 0; /* Ajusta el valor si deseas que llegue hasta el final de la página */
+    overflow-y: auto; /* Añade scroll si el contenido excede el tamaño */
+}
+
+.left-column h2 {
+    font-family: 'dogica';
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.left-column .archives {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column .archives li {
+    margin-bottom: 10px;
+}
+
+.left-column details {
+    margin-bottom: 5px;
+}
+
+.left-column summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.left-column ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.left-column a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-column a:hover {
+    text-decoration: underline;
+}
