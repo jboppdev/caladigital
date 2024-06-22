@@ -138,3 +138,26 @@ a:visited {
 .left-column a:hover {
     text-decoration: underline;
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .left-column {
+        display: none; /* Oculta la columna izquierda en dispositivos móviles */
+    }
+
+    .header {
+        margin-top: 20px; /* Ajusta el margen superior del encabezado */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce el tamaño de fuente del encabezado */
+    }
+
+    .pagination {
+        margin-top: 10px; /* Ajusta el margen superior de los botones de paginación */
+    }
+}
