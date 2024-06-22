@@ -1,8 +1,23 @@
+
+
 const articlesPerPage = 5;
 let currentPage = 1;
 const list = document.getElementById('article-list');
 const items = list.getElementsByTagName('li');
 const totalPages = Math.ceil(items.length / articlesPerPage);
+
+// Mostrar la primera página al cargar el documento
+document.addEventListener('DOMContentLoaded', (event) => {
+  showPage(currentPage);
+  const listItems = document.querySelectorAll('#article-list li');
+  listItems.forEach(li => {
+      const separator = document.createElement('img');
+      separator.src = './separador.png';
+      separator.classList.add('separator');
+      li.appendChild(separator);
+  });
+});
+
 
 function showPage(page) {
     if (page < 1) page = 1;
@@ -34,14 +49,3 @@ function prevPage() {
     }
 }
 
-// Mostrar la primera página al cargar el documento
-document.addEventListener('DOMContentLoaded', (event) => {
-    showPage(currentPage);
-    const listItems = document.querySelectorAll('#article-list li');
-    listItems.forEach(li => {
-        const separator = document.createElement('img');
-        separator.src = './separador.png';
-        separator.classList.add('separator');
-        li.appendChild(separator);
-    });
-});
