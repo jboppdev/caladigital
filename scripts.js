@@ -1,51 +1,50 @@
-
-
-const articlesPerPage = 5;
+const itemsPerPage = 5;
 let currentPage = 1;
-const list = document.getElementById('article-list');
-const items = list.getElementsByTagName('li');
-const totalPages = Math.ceil(items.length / articlesPerPage);
 
-// Mostrar la primera página al cargar el documento
-document.addEventListener('DOMContentLoaded', (event) => {
-  showPage(currentPage);
-  const listItems = document.querySelectorAll('#article-list li');
-  listItems.forEach(li => {
-      const separator = document.createElement('img');
-      separator.src = './separador.png';
-      separator.classList.add('separator');
-      li.appendChild(separator);
-  });
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const listItems = document.querySelectorAll('#article-list li');
+    const totalPages = Math.ceil(listItems.length / itemsPerPage);
 
-
-function showPage(page) {
-    if (page < 1) page = 1;
-    if (page > totalPages) page = totalPages;
-    currentPage = page;
-
-    for (let i = 0; i < items.length; i++) {
-        items[i].classList.add('hidden');
+    function showPage(page) {
+        listItems.forEach((li, index) => {
+            if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+                li.style.display = 'block';
+            } else {
+                li.style.display = 'none';
+            }
+        });
     }
 
-    const start = (page - 1) * articlesPerPage;
-    const end = start + articlesPerPage;
-    for (let i = start; i < end; i++) {
-        if (items[i]) {
-            items[i].classList.remove('hidden');
+    function updateButtons() {
+        document.querySelector('button.prev').disabled = currentPage === 1;
+        document.querySelector('button.next').disabled = currentPage === totalPages;
+    }
+
+    document.querySelector('button.prev').addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+            updateButtons();
         }
-    }
-}
+    });
 
-function nextPage() {
-    if (currentPage < totalPages) {
-        showPage(currentPage + 1);
-    }
-}
+    document.querySelector('button.next').addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            showPage(currentPage);
+            updateButtons();
+        }
+    });
 
-function prevPage() {
-    if (currentPage > 1) {
-        showPage(currentPage - 1);
-    }
-}
+    showPage(currentPage);
+    updateButtons();
 
+    // Add separators
+    listItems.forEach(li => {
+        const separator = document.createElement('img');
+        separator.src = './separador.png';
+        separator.alt = 'Separador';
+        separator.classList.add('separator');
+        li.appendChild(separator);
+    });
+});

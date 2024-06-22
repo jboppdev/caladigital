@@ -79,6 +79,8 @@ a:visited {
     cursor: pointer;
 }
 .separator {
-    width: 50%;
+    width: 70%;
     height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
 }
