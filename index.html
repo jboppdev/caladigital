@@ -1,29 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
     <title>__cala digital</title>
-    <link rel="icon" href="./icon.png" type="image/png"> <!-- Cambia "ruta/al/tu/icono.png" por la ruta de tu propio icono -->
+    <link rel="icon" href="./icon.png" type="image/png">
+    <!-- Cambia "ruta/al/tu/icono.png" por la ruta de tu propio icono -->
 
 </head>
+
 <body>
-    <h1>           
-        <a href="./index.html">cala digital</a>
-    </h1>
+    <div class="header">
+        <h1>
+            <a href="./index.html">cala digital</a>
+        </h1>
+    </div>
+    <div class="pagination">
+        <button onclick="prevPage()">Anterior</button>
+        <button onclick="nextPage()">Siguiente</button>
+    </div>
     <div class="container">
-        <ul>
+        <ul id="article-list">
+            
             <li>
                 <a href="./textos/articulo1/index.html">
-                    <img src="./textos/articulo1/portada.jpg" alt="Imagen 1">
+                    <img src="./textos/articulo1/portada.jpg" >
                     <h2>Título del Artículo 1</h2>
-                    <p>Primeras líneas del artículo 1...</p>
                 </a>
+                <p>24/06/2024</p>
             </li>
-            <!-- Repite este patrón para cada artículo -->
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo2/index.html">
+                    <img src="./textos/articulo2/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo3/index.html">
+                    <img src="./textos/articulo3/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo4/index.html">
+                    <img src="./textos/articulo4/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo5/index.html">
+                    <img src="./textos/articulo5/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo6/index.html">
+                    <img src="./textos/articulo6/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo7/index.html">
+                    <img src="./textos/articulo7/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo8/index.html">
+                    <img src="./textos/articulo8/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo9/index.html">
+                    <img src="./textos/articulo9/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
+            <li>
+                <a href="./textos/articulo10/index.html">
+                    <img src="./textos/articulo10/portada.jpg" >
+                    <h2>Título del Artículo 1</h2>
+                </a>
+                <p>24/06/2024</p>
+            </li>
+            <!-- repetir por cada articulo.... -->
         </ul>
     </div>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
