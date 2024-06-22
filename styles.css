@@ -1,0 +1,60 @@
+.container {
+    width: 50%; /* Establece el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade un espacio interno al contenedor */
+    background-color: #f0f0f0; /* Fondo blanco para el contenedor */
+    border-radius: 10px; /* Añade bordes redondeados al contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+h1 {
+    font-family: 'dogica';
+    font-size: 24px;
+    color: #333;   
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid #999; 
+    padding-bottom: 10px;
+}
+
+/* Establece un tamaño fijo para las imágenes */
+img {
+    width: 700px; /* Ancho fijo */
+    height: 400px; /* Alto fijo */
+}
+
+/* Elimina el marcador de lista de los elementos <li> */
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #f0f0f0; /* Puedes usar cualquier color en formato hexadecimal, RGB, HSL, etc. */
+}
+
+h2 {
+    font-family: 'dogica';
+    font-size: 17px;
+    color: #333;   
+    margin-top: 20px;
+}
+
+/* Establece el tipo de fuente para los párrafos */
+p {
+    font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+    font-size: 18px;
+}
+
+/* Elimina el subrayado de los enlaces */
+a {
+    text-decoration: none;
+    color: #333; /* Color normal de los enlaces */
+}
+
+/* Establece el mismo color para los enlaces visitados */
+a:visited {
+    color: #333; /* Mantén el mismo color para los enlaces visitados */
+}
