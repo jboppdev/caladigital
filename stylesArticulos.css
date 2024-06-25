@@ -1,0 +1,25 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    max-height: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+p {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+}
+
+.capitalize-first-letter::first-letter {
+    text-transform: uppercase;
+    font-size: 1.2em; /* Opcional: para resaltar la primera letra */
+    font-weight: bold; /* Opcional: para hacer la primera letra en negrita */
+}
+

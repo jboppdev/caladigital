@@ -11,16 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Añadir evento de click para toggle en móvil
     archiveToggle.addEventListener('click', () => {
         if (isMobile()) {
-            archives.classList.toggle('visible');
+            archives.classList.toggle('hidden');
         }
     });
 
     // Asegurarse de que el evento de click solo está activo en móvil
     window.addEventListener('resize', () => {
         if (!isMobile()) {
-            archives.classList.remove('visible'); // Asegurarse de que esté visible en pantallas grandes
+            archives.classList.remove('hidden'); // Asegurarse de que esté visible en pantallas grandes
         } else {
-            archives.classList.add('visible'); // Resetear el estado en pantallas pequeñas
+            archives.classList.add('hidden'); // Resetear el estado en pantallas pequeñas
         }
     });
 
@@ -51,6 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.style.display = 'none';
             }
         });
+        if (!isMobile()) {
+            archives.classList.remove('hidden'); // Asegurarse de que esté visible en pantallas grandes
+        } else {
+            archives.classList.add('hidden'); // Resetear el estado en pantallas pequeñas
+        }
     }
 
     function updateButtons() {
