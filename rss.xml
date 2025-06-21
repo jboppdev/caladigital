@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>cala digital</title>
+  <link>https://www.caladigital.es/</link>
+  <description>un puñado de bits a la mar</description>
+  <language>es-es</language>
+  <lastBuildDate>Sat, 21 Jun 2025 10:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Quiero volver a ser analógico</title>
+    <link>https://www.caladigital.es/textos/analogico</link>
+    <description>Sobre conectar con lo digital</description>
+    <pubDate>Fri, 20 Jun 2025 10:00:00 +0000</pubDate>
+  </item>
+
+</channel>
+</rss>
