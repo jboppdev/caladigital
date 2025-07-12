@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
   <title>cala digital</title>
   <link>https://www.caladigital.es/</link>
+  <atom:link href="https://www.caladigital.es/rss.xml" rel="self" type="application/rss+xml"/>
+      <image>
+    <url>https://www.caladigital.es/icon2.png</url>
+    <title>cala digital</title>
+    <link>https://www.caladigital.es/</link>
+  </image>
   <description>un puñado de bits a la mar</description>
   <language>es-es</language>
   <lastBuildDate>Sat, 21 Jun 2025 10:00:00 +0000</lastBuildDate>
@@ -10,9 +16,27 @@
   <item>
     <title>Quiero volver a ser analógico</title>
     <link>https://www.caladigital.es/textos/analogico</link>
-    <description>Sobre conectar con lo digital</description>
-    <pubDate>Fri, 20 Jun 2025 10:00:00 +0000</pubDate>
+    <description>sobre conectar con lo digital</description>
+    <pubDate>Sun, 20 Oct 2024 10:00:00 +0000</pubDate>
+    <guid>https://www.caladigital.es/textos/analogico</guid>
   </item>
 
+  <item>
+    <title>KINGDOM HEARTS y la importancia de las relaciones revolucionarias</title>
+    <link>https://www.caladigital.es/textos/kingdomhearts</link>
+    <description>my friends are my power</description>
+    <pubDate>Tue, 20 Aug 2024 10:00:00 +0000</pubDate>
+    <guid>https://www.caladigital.es/textos/kingdomhearts</guid>
+
+  </item>
+
+    <item>
+    <title>La cala digital</title>
+    <link>https://www.caladigital.es/textos/caladigital</link>
+    <description>nuevos comienzos</description>
+    <pubDate>Mon, 15 Jul 2024 10:00:00 +0000</pubDate>
+    <guid>https://www.caladigital.es/textos/caladigital</guid>
+
+  </item>
 </channel>
 </rss>
